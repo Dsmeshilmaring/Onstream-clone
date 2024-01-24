@@ -1,0 +1,61 @@
+/** @format */
+
+.overlay {
+  filter: brightness(50%);
+  z-index: 1;
+}
+
+.choose-quality-container {
+  @include width-height(100%, auto);
+  @include position(unset, 0, 0, 0);
+  @include flex-box(column, 1.2rem);
+  border-radius: 2.4rem 2.4rem 0 0;
+  padding: 1.2rem 2.4rem;
+  background-color: rgb(78, 81, 72);
+  z-index: 1;
+
+  h2 {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.bar {
+  @include width-height(6rem, 0.4rem);
+  background-color: rgb(159, 159, 159);
+  margin-bottom: 2.4rem;
+  border-radius: 10rem;
+}
+
+.quality {
+  @include flex-box(row, 1.2rem);
+  justify-content: flex-start;
+  width: 100%;
+  background-color: rgb(52, 52, 52);
+  border-radius: 0.8rem;
+  padding: 1.8rem 2.4rem;
+}
+
+.download-icon {
+  @include square(4.8rem);
+  background-color: white;
+  fill: rgb(196, 145, 145);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+.text {
+  line-height: 2;
+  margin-left: 1.8rem;
+
+  .quality-type {
+    border: 1px solid;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    margin-right: 1.8rem;
+  }
+}
+
+.right-icon {
+  @include square(3.2rem);
+  margin-left: auto;
+}

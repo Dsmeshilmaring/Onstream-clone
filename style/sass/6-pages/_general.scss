@@ -1,0 +1,77 @@
+/** @format */
+
+.subtitle-container {
+  padding: 0rem 2.4rem 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.6rem;
+  justify-items: end;
+  margin-bottom: auto;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+.display {
+  @include width-height(100%, 12rem);
+  grid-column: span 2;
+  background-color: burlywood;
+}
+
+.common-text {
+  justify-self: end;
+  margin-right: auto;
+}
+
+.color-rectangle {
+  @include width-height(4.2rem, 2.4rem);
+  background-color: $active-color;
+}
+
+.footer {
+  margin: 2.4rem;
+}
+
+.save-button {
+  @include width-height(100%, 4.8rem);
+  text-align: center;
+  background-color: $active-color;
+  display: inline-block;
+  border-radius: 0.8rem;
+}
+
+.general-icon {
+  @include flex-box(row, 1.2rem);
+}
+
+.process_bar-container {
+  @include width-height(100%, 4px);
+  grid-column: span 2;
+  background-color: rgb(179, 179, 178);
+}
+
+.process_background {
+  @include width-height(12rem, inherit);
+  position: relative;
+  background-color: rgb(255, 255, 169);
+}
+
+.process_place {
+  @include square(1.8rem);
+  @include position(0.2rem, 0, 0, 12rem);
+  transform: translateY(-50%);
+  border-radius: 100%;
+  background-color: $active-color;
+}
+
+.box-container {
+  @include flex-box(row, 2.4);
+  margin: 2.4rem;
+}
+
+.box {
+  @include width-height(100%, 4px);
+  background-color: rgba(199, 199, 199, 0.501);
+}

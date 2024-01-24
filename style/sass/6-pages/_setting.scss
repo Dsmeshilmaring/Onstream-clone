@@ -1,0 +1,103 @@
+/** @format */
+
+.all-container {
+  align-items: normal;
+}
+
+.watchList_image-container {
+  width: inherit;
+  display: flex;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.2rem;
+  margin: 1.2rem;
+  line-height: 1.5;
+
+  h3 {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+}
+
+.watchList_image-main {
+  justify-self: flex-start;
+  margin-bottom: auto;
+}
+
+.watchList_text-container {
+  @include flex-box(column, 1.2rem);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.circle {
+  display: inline-block;
+  padding: 0.1rem;
+  background-color: rgba(230, 230, 230, 0.579);
+  margin: 0.2rem 0.8rem;
+}
+
+.header-container {
+  grid-template-rows: 1fr;
+
+  .profile-picture {
+    background-color: yellow;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 100%;
+    grid-column: 6/7;
+  }
+}
+
+.main-container {
+  @include flex-box(row, 3.2rem);
+  @include width-height(100%, 100%);
+  margin-top: 1.2rem;
+  padding: 2.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile_text p {
+  margin-top: 1.2rem;
+}
+
+.setting-heading {
+  grid-column: 1/-1;
+  align-self: start;
+  margin: 1.2rem 0rem;
+}
+
+.profile_text {
+  grid-column: 1/-2;
+  justify-self: start;
+}
+
+.setting-icon {
+  grid-column: span 2;
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  background-color: rgba(240, 248, 255, 0.3);
+}
+
+.icon_text-container {
+  display: flex;
+  width: 100%;
+  align-self: start;
+  align-items: center;
+  gap: 1.8rem;
+
+  p {
+    margin-right: auto;
+  }
+}
+
+.log_out {
+  display: inline-block;
+  width: 100%;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: solid 1px;
+  margin-top: auto;
+}

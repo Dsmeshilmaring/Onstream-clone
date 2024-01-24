@@ -1,0 +1,40 @@
+/** @format */
+
+.header {
+  height: auto;
+  margin-bottom: 0;
+}
+
+.result_filter-container {
+  @include flex-box(row, 0);
+  justify-content: space-between;
+}
+
+.filter_result-navigation {
+  @include flex-box(row, 0.8rem);
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2.4rem 0rem 0rem 0rem;
+  overflow-x: scroll;
+
+  div {
+    @include flex-box(row, 0.8rem);
+    box-shadow: 0 0 0 1px rgb(97, 97, 97) inset;
+    padding: 0.4rem 0.8rem;
+    border-radius: 100px;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  button {
+    all: unset;
+    height: 1.2rem;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}

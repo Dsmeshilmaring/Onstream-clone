@@ -1,0 +1,72 @@
+/** @format */
+
+.filter-main-container {
+  padding: 0rem 2.4rem;
+  height: 100%;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+.section-container {
+  @include width-height(100%, 12rem);
+}
+
+.filter-box-container {
+  @include flex-box(row, 2.4rem);
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 8rem;
+  margin: 1.8rem;
+}
+
+.tick-container {
+  @include flex-box(row, 0.8rem);
+  flex-wrap: nowrap;
+  height: fit-content;
+
+  label {
+    position: relative;
+    @include square16;
+    border-radius: 0.4rem;
+    background-color: $primary-color;
+    top: 0;
+
+    input {
+      @include width-height(100%, 100%);
+      opacity: 1;
+    }
+  }
+}
+
+.tick-box {
+  @include square16;
+  border-radius: 0.4rem;
+  background-color: $primary-color;
+}
+
+.filter-footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.2rem;
+  padding: 2.4rem;
+
+  .submit-button {
+    @include flex-box(row, 0);
+    width: 100%;
+    margin: 0;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  .rest-button {
+    width: 100%;
+    border: none;
+    color: $primary-color;
+    background-color: rgb(90, 90, 90);
+    cursor: pointer;
+  }
+}

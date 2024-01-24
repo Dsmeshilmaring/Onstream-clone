@@ -1,0 +1,29 @@
+/** @format */
+
+%button {
+  @include flex-box(row, 0.8rem);
+  @include width-height(100%, 5.2rem);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.yellow-button {
+  @extend %button;
+  color: #1a1a1a;
+  background-color: $active-color;
+}
+
+.white-button {
+  @extend %button;
+  color: white;
+  background-color: #ffffff00;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.615) inset;
+}
+
+.backgound_white {
+  @extend %button;
+  background-color: white;
+  color: black !important;
+}
